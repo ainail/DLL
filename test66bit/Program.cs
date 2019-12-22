@@ -7,7 +7,7 @@ namespace test66bit
     {
         static void Main(string[] args)
         {
-            var analysator = new DllAnalysator(args[0]);
+            IDllAnalysator analysator = new DllAnalysator(args[0]);
             foreach (var str in analysator.GetTypesAndMethods())
                 Console.WriteLine(str);
         }
